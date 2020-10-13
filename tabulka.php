@@ -24,27 +24,21 @@ echo "<br>";
 $servername = "localhost";
 $username = "root";
 $password = "";
-
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, "rozvrh");
-
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-
-
 //$sql = "SELECT den, hodina, predmet FROM rozvrh WHERE trieda='4b' AND skupina=2";
 if (!empty($_GET['trieda'])) {
     $where = " WHERE trieda='" . $_GET["trieda"] . "' AND skupina='" . $_GET["skupina"] . "'";
 } else {
     $where = "";
 }
-
 $sql = "SELECT * FROM rozvrh $where";
 $result = mysqli_query($conn, $sql);
-
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while ($row = mysqli_fetch_assoc($result)) {
@@ -53,19 +47,17 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "0 results";
 }
-
 //mysqli_close($conn);
-
 echo "<br>";
 echo "<br>";
-
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Stránka 1 </title>
-</head>
-</html>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title> Stránka 1 </title>
+    </head>
+    </html>
 
 <?php
 $sql1 = "SELECT trieda,skupina FROM rozvrh GROUP BY trieda,skupina";
@@ -74,7 +66,6 @@ $result1 = mysqli_query($conn, $sql1);
 while ($row1 = mysqli_fetch_assoc($result1)) {
     echo "<a href=tabulka.php?trieda=" . $row1["trieda"] . "&amp;skupina=" . $row1["skupina"] . ">" . $row1["trieda"] . " - " . $row1["skupina"] . ".sk</a></br>";
 }
-
 echo "<br>";
 echo "<br>";
 ?>
@@ -91,25 +82,25 @@ $i = 0;
 //$rozvrh[2][3]= "PFG";
 ?>
 
-<table border=1 class="table">
-    <tr>
-        <td>&nbsp;</td>
-        <? foreach ($hodiny as $hodina): ?>
-            <td><? echo $hodina; ?></td>
-        <? endforeach; ?>
-    </tr>
-
-    <? foreach ($dni as $i => $den): ?>
+    <table border=1 class="table">
         <tr>
-            <td><? echo $den; ?></td>
-            <? foreach ($hodiny as $j => $hodina): ?>
-                <td><? echo @$rozvrh[$i][$j]; ?></td>
-                <? $i++; ?>
+            <td>&nbsp;</td>
+            <? foreach ($hodiny as $hodina): ?>
+                <td><? echo $hodina; ?></td>
             <? endforeach; ?>
         </tr>
 
-    <? endforeach; ?>
-</table>
+        <? foreach ($dni as $i => $den): ?>
+            <tr>
+                <td><? echo $den; ?></td>
+                <? foreach ($hodiny as $j => $hodina): ?>
+                    <td><? echo @$rozvrh[$i][$j]; ?></td>
+                    <? $i++; ?>
+                <? endforeach; ?>
+            </tr>
+
+        <? endforeach; ?>
+    </table>
 
 <?php
 function preloz($retazec, $conn)
@@ -120,9 +111,3 @@ function preloz($retazec, $conn)
 
     return !empty($row["preklad"]) ? $row["preklad"] : $retazec;
 }
-	
-	
-	
-	
-	
-	
