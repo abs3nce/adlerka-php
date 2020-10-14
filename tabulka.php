@@ -11,7 +11,7 @@ if (empty($_SESSION["jazyk"])) {
 }
 if (!empty($_GET["jazyk"])) {
     $_SESSION["jazyk"] = $_GET["jazyk"];
-}
+}   
 var_dump($_SESSION["jazyk"]);
 echo "<br>";
 echo "<br>";
@@ -82,7 +82,7 @@ $i = 0;
 //$rozvrh[2][3]= "PFG";
 ?>
 
-    <table border=1 class="table">
+    <table border=0 class="table">
         <tr>
             <td>&nbsp;</td>
             <? foreach ($hodiny as $hodina): ?>

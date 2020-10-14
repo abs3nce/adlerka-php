@@ -44,6 +44,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +65,9 @@
       <workItem from="1602497471731" duration="236000" />
       <workItem from="1602532581318" duration="138000" />
       <workItem from="1602533303717" duration="1275000" />
-      <workItem from="1602575587479" duration="823000" />
+      <workItem from="1602575587479" duration="1080000" />
+      <workItem from="1602577330439" duration="1578000" />
+      <workItem from="1602656235098" duration="824000" />
     </task>
     <task id="LOCAL-00001" summary="- organized repository">
       <created>1602491105018</created>
@@ -75,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602534466056</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- cosmetic changes to the code">
+      <created>1602576587920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602576587920</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,23 +111,24 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- organized repository" />
     <MESSAGE value="+ database import and made responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ database import and made responsive" />
+    <MESSAGE value="- cosmetic changes to the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="- cosmetic changes to the code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="41" width="800" height="712" key="#Plugins" timestamp="1602491223283">
       <screen x="0" y="27" width="3286" height="1053" />
     </state>
     <state x="278" y="41" width="800" height="712" key="#Plugins/0.27.3286.1053@0.27.3286.1053" timestamp="1602491223283" />
-    <state x="116" y="102" width="536" height="373" key="Vcs.Push.Dialog.v2" timestamp="1602534487618">
+    <state x="116" y="102" width="536" height="373" key="Vcs.Push.Dialog.v2" timestamp="1602576594287">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="116" y="102" width="536" height="373" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602534487618" />
+    <state x="116" y="102" width="536" height="373" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602576594287" />
     <state x="278" y="133" width="800" height="529" key="Vcs.Push.Dialog.v2/0.27.3286.1053@0.27.3286.1053" timestamp="1602491116812" />
     <state x="178" y="153" key="run.anything.popup.inPresentationMode" timestamp="1602575954937">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="178" y="153" key="run.anything.popup.inPresentationMode/0.27.1366.741@0.27.1366.741" timestamp="1602575954937" />
-    <state x="144" y="135" width="672" height="478" key="search.everywhere.popup" timestamp="1602576386273">
+    <state x="144" y="135" width="672" height="478" key="search.everywhere.popup" timestamp="1602576592657">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="158" y="25" width="1046" height="1470" key="search.everywhere.popup.inPresentationMode" timestamp="1602575958776">
@@ -120,7 +136,7 @@
     </state>
     <state x="158" y="25" width="1046" height="1470" key="search.everywhere.popup.inPresentationMode/0.27.1366.741@0.27.1366.741" timestamp="1602575958776" />
     <state x="144" y="135" width="672" height="478" key="search.everywhere.popup/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1602491257712" />
-    <state x="144" y="135" width="672" height="478" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1602576386273" />
+    <state x="144" y="135" width="672" height="478" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1602576592657" />
     <state x="346" y="181" width="672" height="678" key="search.everywhere.popup/0.27.3286.1053@0.27.3286.1053" timestamp="1602491188805" />
   </component>
 </project>
